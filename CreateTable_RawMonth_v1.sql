@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[raw_month](
+	[month_id] [varchar](128) NOT NULL,
+	[action_month] [varchar](20) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING ON
+GO
+ALTER TABLE [dbo].[raw_month] ADD  CONSTRAINT [PK_raw_month] PRIMARY KEY CLUSTERED 
+(
+	[month_id] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
